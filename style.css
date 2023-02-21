@@ -1,0 +1,232 @@
+.box {
+    background-color: red;
+    width: 250px;
+    height: 200px;
+}
+
+.box:hover {
+    background-color: green;
+    animation: rotate 1s ease-in-out;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+/*  */
+
+.box-2 {
+    background-color: #fff;
+    transform: rotateX(51deg) rotateZ(43deg);
+    margin-top: 50px;
+    margin-left: 400px;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    border-radius: 32px;
+    box-shadow: 1px 1px 0 7px lightblue, -1px 0 28px 0 rgba(34, 33, 81, 0.01), 28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+    transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
+}
+
+.box-2:hover {
+    background-color: #fff;
+    transform: translate3d(0px, -16px, 0px) rotateX(51deg) rotateZ(43deg);
+    box-shadow: 1px 1px 0 7px aqua, -1px 0 28px 0 rgba(34, 33, 81, 0.01), 54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+}
+
+
+/* Wifi */
+
+#circle {
+    transform: rotateX(51deg) rotateZ(343deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 60px auto;
+    width: 320px;
+}
+
+.circle {
+    padding: 8px;
+    border: 8px solid transparent;
+    border-radius: 400px;
+    -webkit-animation: left 2s linear infinite;
+    -moz-animation: left 2s linear infinite;
+    -o-animation: left 2s linear infinite;
+    animation: left 2s linear infinite;
+}
+
+.one {
+    width: 288px;
+    height: 288px;
+    -webkit-animation-delay: 1s;
+}
+
+.two {
+    -webkit-animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+    -o-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+
+.three {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.four {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.five {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.six {
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.seven {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.eight {
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.nine {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+@-webkit-keyframes left {
+    0% {
+        border-top: 18px solid rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        border-top: 18px solid #00b7f2;
+    }
+}
+
+@-moz-keyframes left {
+    0% {
+        border-top: 18px solid rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        border-top: 18px solid #00b7f2;
+    }
+}
+
+@-o-keyframes left {
+    0% {
+        border-top: 18px solid rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        border-top: 18px solid #00b7f2;
+    }
+}
+
+@keyframes left {
+    0% {
+        border-top: 18px solid rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        border-top: 18px solid #00b7f2;
+    }
+}
+
+
+/* wifi 2*/
+
+body .container {
+    display: flex;
+    margin-top: 30vh;
+    margin-left: 80px;
+}
+
+body .container .connection {
+    transform: rotate(0.26turn);
+    display: flex;
+    align-items: center;
+}
+
+body .container .connection .conn {
+    margin-right: 5px;
+}
+
+body .container .connection .bar1 {
+    background: hsl(253, 13%, 28%);
+    width: 9px;
+    height: 3vw;
+    animation: fade 2s 1.8s infinite;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+}
+
+body .container .connection .bar2 {
+    background: #433F52;
+    width: 9px;
+    height: 2vw;
+    animation: fade 2s 1.4s infinite;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+}
+
+body .container .connection .bar3 {
+    background: #433F52;
+    width: 9px;
+    height: 1vw;
+    animation: fade 2s 1s infinite;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+}
+
+@keyframes fade {
+    0% {
+        background: #4AF626;
+    }
+    100% {
+        background: #433F52;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.2);
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
